@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praachee Bhargava . Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #003060;
+        }
+
+        header {
+            background: #003060;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background: #005090;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        #toggleDark {
+            background: #ffd200;
+            color: #003060;
+            padding: 6px 12px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 40px 8%;
+        }
+
+        h2 {
+            color: #003060;
+            font-size: 28px;
+            border-left: 6px solid #0073e6;
+            padding-left: 10px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #e5f1ff;
+            border-radius: 10px;
+            padding: 20px;
+            color: #003060;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #0073e6;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background: #004c99;
+        }
+
+        footer {
+            background: #003060;
+            padding: 25px;
+            color: white;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* DARK MODE */
+        .dark {
+            background: #1a1a1a;
+            color: #f2f2f2;
+        }
+
+        .dark header,
+        .dark nav,
+        .dark footer {
+            background: #000;
+        }
+
+        .dark .card {
+            background: #2a2a2a;
+            color: white;
+        }
+
+        .dark .button {
+            background: #3399ff;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Praachee Bhargava . Data Analyst . AI Generalist</h1>
+    <p>Python . SQL . Tableau . Machine Learning . Streamlit</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+    <button id="toggleDark">Dark Mode</button>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a Data Analyst with strong skills in Python, SQL, Tableau, Machine Learning and automation. I combine analytics with 20 years of marketing experience to solve business problems and build intelligent data products.</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="card">
+            <img src="images/customer_segmentation.png" />
+            <h3>Customer Segmentation and Churn Strategy</h3>
+            <p>Random Forest . PCA . CLV . RFM . Streamlit App</p>
+            <a class="button" href="https://bank-churn-rfm-clv.streamlit.app/">Live Demo</a>
+        </div>
+
+        <div class="card">
+            <img src="images/ab_testing.png" />
+            <h3>A/B Testing for Landing Page Optimization</h3>
+            <p>Hypothesis Testing . Z Test . Conversion Optimization</p>
+            <a class="button" href="https://github.com/Praachee19">GitHub</a>
+        </div>
+
+        <div class="card">
+            <img src="images/retail_automation.png" />
+            <h3>Retail Dashboard Automation</h3>
+            <p>Python Automation . Tableau . Plotly</p>
+            <a class="button" href="https://public.tableau.com/app/profile/praachee.bhargava">Tableau</a>
+        </div>
+
+        <div class="card">
+            <img src="images/retail_inventory.png" />
+            <h3>Retail Inventory Alert System</h3>
+            <p>Email Alerts . Stock Threshold Automation</p>
+            <a class="button" href="https://inventoryalert.streamlit.app/">Live App</a>
+        </div>
+
+        <div class="card">
+            <img src="images/sql_project_1.png" />
+            <h3>SQL . E-Commerce Business Analysis</h3>
+            <p>Data Cleaning . Aggregation . Trends</p>
+            <a class="button" href="https://github.com/Praachee19">Repository</a>
+        </div>
+
+        <div class="card">
+            <img src="images/sql_project_2.png" />
+            <h3>Advanced SQL Reporting</h3>
+            <p>Joins . Windows . CTEs . Business Insights</p>
+            <a class="button" href="https://github.com/Praachee19">SQL Code</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+    <h2>Resume</h2>
+    <p>Download my full resume.</p>
+    <a class="button" href="Praachee_Bhargava_Resume.pdf" download>Download Resume</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: praacheebhargava@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/Praachee19" target="_blank">github.com/Praachee19</a></p>
+    <p>Tableau: <a href="https://public.tableau.com/app/profile/praachee.bhargava" target="_blank">My Tableau Portfolio</a></p>
+</section>
+
+<footer>
+    © 2025 Praachee Bhargava. All Rights Reserved.
+</footer>
+
+<!-- DARK MODE SCRIPT -->
+<script>
+    const toggle = document.getElementById("toggleDark");
+    toggle.onclick = function() {
+        document.body.classList.toggle("dark");
+    };
+</script>
+
+</body>
+</html>
+
